@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "OFpijKs4gBDF/Zv48F8XuTeU06qX/te1UE4YfwznzTXheiGP6LQgu0zdp56BetdcHe5mN31JF4z/UPOd0RgkEA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\bhanu\\Desktop\\Lecture_05_MVVM\\Lecture_05_MVVM\\Lecture_05_MVVM.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bhanu\\.nuget\\packages\\communitytoolkit.mvvm\\8.1.0\\communitytoolkit.mvvm.8.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
