@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,21 +21,26 @@ namespace Lecture_05_MVVM
         [ObservableProperty]
         public int age;
 
-        
+        public MainWindowVM()
+        {
+            Age = 20;
+        }
 
         public string FullName { 
             get {
                 return $"{firstName} {lastName}";
             } 
         }
-
+        [RelayCommand]
         public void IncreaseAge()
         {
-            age += 5;
+            Age += 5;
         }
+        [RelayCommand]
+
         public void DecreaseAge()
         {
-            age -= 5;
+            Age -= 5;
         }
     }
 }

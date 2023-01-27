@@ -13,29 +13,42 @@
         <StackPanel>
             <TextBox
                 FontSize="20"
-                Margin="10"
+                Margin="5"
                 Padding="10"
                 Text="{Binding FirstName, UpdateSourceTrigger=PropertyChanged  }"
                 />
             <TextBox
-                FontSize="20" Margin="10" Padding="10"
+                FontSize="20" Margin="5" Padding="10"
                 Text="{Binding LastName ,UpdateSourceTrigger=PropertyChanged}"
                 />
             <TextBlock 
-                FontSize="20" Margin="10" Padding="10"
-                Text="{Binding Age}"/>
-
-            <TextBlock FontSize="20" Margin="10" Padding="10"
-                       Text="{Binding FullName }"/>
+                FontSize="20" Margin="5" Padding="10"
+                Text="{Binding Age , UpdateSourceTrigger=PropertyChanged}"/>
+            
             <StackPanel Orientation="Horizontal">
-                <TextBox FontSize="20" Margin="10"
-                       Padding="10"
+                <TextBlock FontSize="20" Margin="5" 
+                           Padding="10" Width="350"
+                       Text="{Binding FullName }"/>
+                <TextBox FontSize="20" Margin="5"
+                       Padding="10" Width="150"
                        Text="{Binding FirstName}"/>
-                <TextBox FontSize="20" Margin="10"
-                       Padding="10"
+                <TextBox FontSize="20" Margin="5"
+                       Padding="10" Width="150"
                        Text="{Binding LastName}"/>
                 
             </StackPanel>
+            <Button Width="200" Height="50" Padding="10" 
+                    Content="Increase Age" FontSize="20"
+                    Command="{Binding IncreaseAgeCommand}"
+                    Margin="5"/>
+            <Button Width="200" Height="50" Padding="10"
+                    Margin="5" FontSize="20"
+                    Content="Decrease Age"
+                    Command="{Binding DecreaseAgeCommand}"/>
+            <Button Width="200" Height="50" Padding="10"
+                    Margin="5" FontSize="20"
+                    Content="New Window"
+                    Click="Button_Click"/>
 
         </StackPanel>
 

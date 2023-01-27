@@ -25,5 +25,11 @@ namespace Lecture_05_MVVM
             DataContext = new MainWindowVM();
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window window = new CollectionWindow();
+            window.Show();
+        }
     }
 }
